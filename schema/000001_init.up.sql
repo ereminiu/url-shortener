@@ -12,4 +12,4 @@ create table customlinks (
     original text not null
 );
 
-create index customcode on customlinks (custom);
+create index orig on customlinks (custom);
