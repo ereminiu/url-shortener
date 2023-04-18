@@ -22,7 +22,7 @@ type Config struct {
 
 func main() {
 	// read configs
-	data, err := ioutil.ReadFile("../configs/db_config.yaml")
+	data, err := ioutil.ReadFile("../configs/config.yaml")
 	if err != nil {
 		log.Fatalf("failed to load config.yaml")
 	}
