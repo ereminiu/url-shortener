@@ -3,7 +3,7 @@ package repository
 import (
 	"fmt"
 
-	"github.com/ereminiu/link-shorter/pkg/models"
+	"github.com/ereminiu/url-shortener/pkg/models"
 )
 
 func CreateLink(link models.Link) error {

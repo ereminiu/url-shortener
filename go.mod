@@ -1,4 +1,4 @@
-module github.com/ereminiu/link-shorter
+module github.com/ereminiu/url-shortener
 
 go 1.20
 

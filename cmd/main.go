@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/ereminiu/link-shorter/pkg/handlers"
-	"github.com/ereminiu/link-shorter/pkg/repository"
+	"github.com/ereminiu/url-shortener/pkg/handlers"
+	"github.com/ereminiu/url-shortener/pkg/repository"
 	"github.com/gin-gonic/gin"
 )
 

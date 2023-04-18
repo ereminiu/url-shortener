@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/ereminiu/link-shorter/pkg/models"
-	"github.com/ereminiu/link-shorter/pkg/service"
+	"github.com/ereminiu/url-shortener/pkg/models"
+	"github.com/ereminiu/url-shortener/pkg/service"
 	"github.com/gin-gonic/gin"
 )
 

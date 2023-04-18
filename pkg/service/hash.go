@@ -3,7 +3,7 @@ package service
 import (
 	"math/rand"
 
-	"github.com/ereminiu/link-shorter/pkg/repository"
+	"github.com/ereminiu/url-shortener/pkg/repository"
 )
 
 var base = 37

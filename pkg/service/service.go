@@ -3,8 +3,8 @@ package service
 import (
 	"log"
 
-	"github.com/ereminiu/link-shorter/pkg/models"
-	"github.com/ereminiu/link-shorter/pkg/repository"
+	"github.com/ereminiu/url-shortener/pkg/models"
+	"github.com/ereminiu/url-shortener/pkg/repository"
 )
 
 func CreateLink(link string) (string, error) {
