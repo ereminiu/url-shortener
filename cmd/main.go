@@ -11,12 +11,13 @@ import (
 )
 
 type Config struct {
-	Host     string `yaml:"host"`
-	Port     string `yaml:"port"`
-	Username string `yaml:"username"`
-	Password string `yaml:"password"`
-	DBName   string `yaml:"DBname"`
-	SSLMode  string `yaml:"sslmode"`
+	Host          string `yaml:"host"`
+	Port          string `yaml:"port"`
+	Username      string `yaml:"username"`
+	Password      string `yaml:"password"`
+	DBName        string `yaml:"DBname"`
+	SSLMode       string `yaml:"sslmode"`
+	LocalHostPort string `yaml:"localhost_port"`
 }
 
 func main() {
@@ -55,5 +56,5 @@ func main() {
 	r.POST("/addcustomlink", handlers.CreateCustomLink)
 	r.GET("/getcustomlink", handlers.GetCustomLink)
 
-	r.Run(":1024")
+	r.Run(cfg.LocalHostPort)
 }
