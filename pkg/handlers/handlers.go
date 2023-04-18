@@ -88,7 +88,9 @@ func CreateCustomLink(c *gin.Context) {
 
 	err := service.CreateCustomLink(lnk)
 	if err != nil {
-		log.Fatalf("Failed to create link %s\n", err)
+		c.JSON(http.StatusNotAcceptable, gin.H{
+			"messange": "Failed to create your custom links: Your code should not exceed 40 characters",
+		})
 		return
 	}
 
