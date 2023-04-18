@@ -91,8 +91,18 @@
 ```
 
 * ### /getcustomlink
+формат запроса: 
+
 ```json 
 {
     "custom_code": "avito-assigment"
 }
 ```
+
+если код некоректный, то вернется ответ с кодом 406: 
+```json 
+{
+    "messange": "Custom code not found"
+}
+```
+иначе произойдет redirect на исходную ссылку. 
