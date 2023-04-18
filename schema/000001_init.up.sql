@@ -11,3 +11,5 @@ create table customlinks (
     custom varchar(10) not null,
     original text not null
 );
+
+create index customcode on customlinks (custom);
