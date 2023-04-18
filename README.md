@@ -27,6 +27,7 @@
   ```
   go run cmd/main.go
   ```
+* Приложение запускается на localhost:1024, задать другой порт можно в файле configs/config.yaml поле "localhost_port"
 
 ## Описание:
 * ### /addlink
